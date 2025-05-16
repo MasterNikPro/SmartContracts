@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -304,7 +304,7 @@
 		"compilationTarget": {
 			"mytocken/NikitaZakharenkoToken.sol": "NikitaZakharenkoToken"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -317,11 +317,11 @@
 	},
 	"sources": {
 		"mytocken/NikitaZakharenkoToken.sol": {
-			"keccak256": "0x13a6f243197c652b414b83251df988ac3b53be4157656884454989fa7d309ea4",
+			"keccak256": "0x8d03d6dd84d0abc7ee528d366e5072a99d51fd5743a0f2d1acd470e2c5870a67",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f625e0a8aca4c4601e1bd5ce2c964ab39d551eb48bb490b84948b47ed9325366",
-				"dweb:/ipfs/QmZADEALXFBhaNtjYoYMXiMh4RCL9C9KgCrTGxDfHoMVKW"
+				"bzz-raw://1acc2c3d605bc821743dac49d0b02d3bea06ed590aae9935bb499b0dc4ae4c2e",
+				"dweb:/ipfs/QmSVsGWyEPimXk1qbH3EFUPNn2tbXUcnZBz4LFZb3PFUfP"
 			]
 		}
 	},
