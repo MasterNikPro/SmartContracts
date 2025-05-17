@@ -18,7 +18,59 @@
 						"type": "address"
 					}
 				],
-				"name": "balances",
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalSupply",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -43,7 +95,13 @@
 					}
 				],
 				"name": "transfer",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
@@ -52,7 +110,12 @@
 			"methods": {}
 		},
 		"userdoc": {
-			"methods": {}
+			"methods": {
+				"transfer(address,uint256)": {
+					"notice": "УЯЗВИМО: нет проверки, что у msg.sender хватает токенов! Sub-/add выполняются в unchecked-режиме ⇒ возможны переполнение и underflow."
+				}
+			},
+			"notice": "VERY BAD TOKEN – демонстрация Integer Overflow / Underflow. В версии 0.6 арифметика «оборачивается» (wraps around), поэтому 0 - 1 == 2⁵²⁶ – 1  и  (MAX + 1) == 0."
 		}
 	},
 	"settings": {
@@ -72,10 +135,10 @@
 	},
 	"sources": {
 		"vulncontracts/vuln2.sol": {
-			"keccak256": "0xfcf5f2ef7f835cb9233ed1f757f78b12349ea76d90e47acf7a83edbf0bc6b863",
+			"keccak256": "0xb6b4b602ae44b2ac474a5f079103c023764782b10847564980efc46e486a5e08",
 			"urls": [
-				"bzz-raw://e4ab3e05b6e319f23d3c24fbef35e503ef50b13d1e7ddd92c6fbf070347065fb",
-				"dweb:/ipfs/Qmf7A5uenMbLCNhuQcqcSdj27JwFNrTBP3ZbGQtDjB7J2m"
+				"bzz-raw://ee7d4775c4589c5965c4c1c6db528559b56a968ddbc8096843a6dd814660d8ca",
+				"dweb:/ipfs/QmZuHDQZfWP7wcFU5XsHV3BjwRXQRQYTuGhrXFzozevB38"
 			]
 		}
 	},

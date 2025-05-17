@@ -9,7 +9,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_bank",
+						"name": "_etherStoreAddress",
 						"type": "address"
 					}
 				],
@@ -42,10 +42,10 @@
 			},
 			{
 				"inputs": [],
-				"name": "bank",
+				"name": "etherStore",
 				"outputs": [
 					{
-						"internalType": "contract IVulnerableBank",
+						"internalType": "contract EtherStore",
 						"name": "",
 						"type": "address"
 					}
@@ -65,10 +65,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -84,7 +80,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"vulncontracts/vuln1_exploit.sol": "Attacker"
+			"tempvuln/Auction.sol": "Attack"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -98,12 +94,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"vulncontracts/vuln1_exploit.sol": {
-			"keccak256": "0xbbbb78c93dd52b5a04f67b87365dd7d8b20a23760b4c22d6acac9d3074528d46",
+		"tempvuln/Auction.sol": {
+			"keccak256": "0x37e1cd42da0aef1b827833dfb835108ce5fa2b2d4d00ad196658e97fe53c5eac",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3b54662a5e3901803e809849f902187761662ea6cb65d71c4b63a7d286dc47e4",
-				"dweb:/ipfs/QmXMD6FG8vaEXL2ETTMA6DzkfTQqDXPhZ37sXH2ANxPkPv"
+				"bzz-raw://2563aedd44e49e0c312bfcbfb0b71b2cad08cdb3cc079e5cff3945e7fecf0d4f",
+				"dweb:/ipfs/QmXCMTuDoh4Pyx373bGYSSNuDheMeum7uDfzXFquW3BdwK"
 			]
 		}
 	},

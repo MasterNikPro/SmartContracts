@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -65,9 +65,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"tempvuln/EtherStore.sol": "EtherStore"
+			"tempvuln/Auction.sol": "EtherStore"
 		},
-		"evmVersion": "cancun",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -79,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"tempvuln/EtherStore.sol": {
-			"keccak256": "0x3c94bbaf3c7eb6744961cbd5082f1b4790feb23646f4ffb39670d66c7ab37759",
+		"tempvuln/Auction.sol": {
+			"keccak256": "0x37e1cd42da0aef1b827833dfb835108ce5fa2b2d4d00ad196658e97fe53c5eac",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3651b91487306b1cab0183055765ea2368573e4b9ac5e5265c775252aaa5eb1d",
-				"dweb:/ipfs/QmPuUad7aDJf7r2CohF1BrsXrLVHy9p1pHbpLUqUS9TJyS"
+				"bzz-raw://2563aedd44e49e0c312bfcbfb0b71b2cad08cdb3cc079e5cff3945e7fecf0d4f",
+				"dweb:/ipfs/QmXCMTuDoh4Pyx373bGYSSNuDheMeum7uDfzXFquW3BdwK"
 			]
 		}
 	},

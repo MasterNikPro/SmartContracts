@@ -1,18 +1,24 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
+
 contract OverflowToken {
-    mapping(address => uint256) public balances;
+    string  public constant name     = "VeryBadToken";
+    string  public constant symbol   = "VBT";
+    uint8   public constant decimals = 18;
+
+    uint256 public totalSupply;
+    mapping(address => uint256) public balanceOf;
 
     constructor() public {
-        // Дамо відправнику 100 токенів
-        balances[msg.sender] = 100;
+        totalSupply = 1_000 * (10 ** uint256(decimals));
+        balanceOf[msg.sender] = totalSupply;      
     }
 
-    // Уразлива функція передачі токенів
-    function transfer(address _to, uint256 _value) public {
-        require(balances[msg.sender] >= _value, "Not enough tokens");
-        balances[msg.sender] -= _value;
-        balances[_to] += _value;
+    
+    function transfer(address _to, uint256 _value) public returns (bool) {
+        balanceOf[msg.sender] -= _value;   // <-- underflow
+        balanceOf[_to]        += _value;   // <-- overflow
+        return true;
     }
 }
