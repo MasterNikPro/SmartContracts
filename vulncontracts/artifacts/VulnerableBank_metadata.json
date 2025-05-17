@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.30+commit.73712a01"
+		"version": "0.8.0+commit.c7dfd78e"
 	},
 	"language": "Solidity",
 	"output": {
@@ -45,13 +45,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -73,7 +67,7 @@
 		"compilationTarget": {
 			"vulncontracts/vuln1.sol": "VulnerableBank"
 		},
-		"evmVersion": "prague",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -86,11 +80,11 @@
 	},
 	"sources": {
 		"vulncontracts/vuln1.sol": {
-			"keccak256": "0xd446f6fd44529234ae26f6435254caee3c09da11bac9eb12b98ed4a9451d5c0e",
+			"keccak256": "0x9196bfe20691862042fa7c0921a25584ebffe5f5add446ab7f46dd9353f6249f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4113a05087201985de9e0335853ff360f02d3d1a646127b1ef0b1ac5fca7f7f5",
-				"dweb:/ipfs/QmWuyqtrpoFWN7d3neCQaCb68zTJf1hKKJBWya2FrszhGu"
+				"bzz-raw://d09b12f3e858c1fec343c3586a2241d75755fe700c9bc75a615b7b97597909ff",
+				"dweb:/ipfs/QmYcjct2KBaMQkzgXnkQaQqZz3FrXouCte99vMjftqBZuT"
 			]
 		}
 	},

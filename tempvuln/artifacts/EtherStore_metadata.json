@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -9,20 +9,11 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "_bank",
+						"name": "",
 						"type": "address"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
-				"inputs": [],
-				"name": "AMOUNT",
+				"name": "balances",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -35,22 +26,9 @@
 			},
 			{
 				"inputs": [],
-				"name": "attack",
+				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "bank",
-				"outputs": [
-					{
-						"internalType": "contract IVulnerableBank",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -67,8 +45,11 @@
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -84,9 +65,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"vulncontracts/vuln1_exploit.sol": "Attacker"
+			"tempvuln/EtherStore.sol": "EtherStore"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -98,12 +79,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"vulncontracts/vuln1_exploit.sol": {
-			"keccak256": "0xbbbb78c93dd52b5a04f67b87365dd7d8b20a23760b4c22d6acac9d3074528d46",
+		"tempvuln/EtherStore.sol": {
+			"keccak256": "0x3c94bbaf3c7eb6744961cbd5082f1b4790feb23646f4ffb39670d66c7ab37759",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3b54662a5e3901803e809849f902187761662ea6cb65d71c4b63a7d286dc47e4",
-				"dweb:/ipfs/QmXMD6FG8vaEXL2ETTMA6DzkfTQqDXPhZ37sXH2ANxPkPv"
+				"bzz-raw://3651b91487306b1cab0183055765ea2368573e4b9ac5e5265c775252aaa5eb1d",
+				"dweb:/ipfs/QmPuUad7aDJf7r2CohF1BrsXrLVHy9p1pHbpLUqUS9TJyS"
 			]
 		}
 	},
