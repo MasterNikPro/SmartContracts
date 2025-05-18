@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "./node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 contract SecureBank is ReentrancyGuard {
     mapping(address => uint256) public balances;
