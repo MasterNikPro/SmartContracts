@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "./node_modules/@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 contract SecureAuction is ReentrancyGuard {
     address public highestBidder;
